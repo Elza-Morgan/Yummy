@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="icon" href="../images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../bootstrap-files/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!--? ==== loading Section-Section ==== -->
+    <div class="loading-screen" id="loading-screen">
+      <div class="spinner"></div>
+    </div>
+    <!--? ==== Side Menu-Section ==== -->
+    <nav>
+      <div id="side-menu" class="bg-danger ">
+        <div id="side-menu-black" class="side-menu-black p-3">
+          <div class="menu p-2" id="menu">
+            <ul class="d-flex flex-column p-0 gap-3">
+              <li id="search">Search</li>
+              <li id="categories">Categories</li>
+              <li id="area">Area</li>
+              <li id="ingredients">Ingredients</li>
+              <li id="contactUs">Contact Us</li>
+            </ul>
+          </div>
+
+          <div class="footer-nav d-flex flex-column gap-1 p-2">
+            <div class="social-icons d-flex gap-1">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-solid fa-globe"></i>
+            </div>
+
+            <div class="footer-content">
+              <p>Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="side-menu-white"
+          class="side-menu-white d-flex flex-column justify-content-between py-4 align-items-center"
+        >
+          <div class="logo w-75">
+            <img src="../images/logo.png" alt="logo" class="w-100" />
+          </div>
+          <i class="fa-solid fa-bars" onclick="navMenuToggler()"></i>
+          <div class="white-side-footer d-flex flex-column gap-2">
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container w-75 test">
+      <div id="search-section" class="row py-5" >
+
+      </div>
+    </div>
+
+    <!--? ==== Home-Section ==== -->
+    <div class="home-food-collections">
+      <!--& ==== loading inner-Section ==== -->
+      <div class="loading-screen-inner">
+        <div class="spinner"></div>
+      </div>
+
+      <div class="container">
+        <div class="row g-4 py-5" id="home-meals">
+          <!-- to display meals according to what is clicked in Js File -->
+          
+        </div>
+
+      </div>
+    </div>
+
+    <script src="../Js/jquery-3.7.1.min.js"></script>
+    <!-- <script src="../jsconfig.json"></script> -->
+    <script src="../bootstrap-files/js/bootstrap.bundle.min.js"></script>
+    <script src="../Js/main.js"></script>
+  </body>
+</html>
